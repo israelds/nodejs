@@ -1,4 +1,11 @@
 {
+  "name": "",
+  "version": "",
+  "description": "",
+  "main": "./tutorial/index.js",
+  "scripts": {
+    "start:dev": "nodemon ./tutorial/index.js"
+  },
   "dependencies": {
     "express": "^4.17.3"
   },
