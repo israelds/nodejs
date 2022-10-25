@@ -1,15 +1,15 @@
-const express = require('express')
+const express = require("express");
 
-const app = express()
+const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hi!')
-})
+app.get("/", (req, res) => {
+  res.send("Hi, Docker!");
+});
 
-const server = app.listen(3000, ()=> console.log('Server ready'))
+const server = app.listen(3000, () => console.log("Server ready"));
 
-process.on('SIGTERM', () => {
-    server.close(() => {
-        console.log('Process terminated')
-    })
-})
+process.on("SIGTERM", () => {
+  server.close(() => {
+    console.log("Process terminated");
+  });
+});

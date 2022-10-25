@@ -2,9 +2,10 @@
   "name": "",
   "version": "",
   "description": "",
-  "main": "./tutorial/index.js",
+  "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon ./tutorial/index.js"
+    "start": "nodemon app.js",
+    "start-tutorial": "nodemon ./tutorial/index.js"
   },
   "dependencies": {
     "express": "^4.17.3"
