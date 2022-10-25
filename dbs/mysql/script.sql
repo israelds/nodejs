@@ -1,0 +1,5 @@
+CREATE DATABASE dev;
+
+USE DATABASE dev;
+
+CREATE TABLE user();

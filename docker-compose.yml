@@ -9,7 +9,11 @@ services:
     volumes:
       - .:/usr/app
 
-  # mysql:
-  #   image: mysql:latest
-  #   ports:
-  #     - "3306:3306"
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: roots
+    volumes:
+      - ./dbs/mysql:/home/dev
+    ports:
+      - "3306:3306"
